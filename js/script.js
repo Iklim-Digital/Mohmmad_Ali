@@ -182,6 +182,25 @@
           smooth: true
       });*/
 
+      // Handle contact form submission to WhatsApp
+      $('.contact-send-btn').on('click', function(e) {
+        e.preventDefault();
+        
+        var inputs = $('.contact-form input');
+        var firstName = inputs.eq(0).val();
+        var lastName = inputs.eq(1).val();
+        var email = inputs.eq(2).val();
+        var phone = inputs.eq(3).val();
+        var subject = inputs.eq(4).val();
+        var message = $('.contact-form textarea').val();
+        
+        var fullMessage = "Name: " + firstName + " " + lastName + "\nEmail: " + email + "\nPhone: " + phone + "\nSubject: " + subject + "\nMessage: " + message;
+        
+        var whatsappUrl = "https://wa.me/96170517162?text=" + encodeURIComponent(fullMessage);
+        
+        window.open(whatsappUrl, '_blank');
+      });
+
     }); 
 
    $('#header').each(function(){
