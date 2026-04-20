@@ -6268,16 +6268,27 @@ tfoot {
 }
 #billboard .slide {
   min-height: 690px;
-  background-size: cover;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
+  height: 690px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+#billboard .slide picture,
+#billboard .slide .hero-media {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#billboard .slide .hero-media {
+  object-fit: cover;
+  object-position: center 42%;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 @media only screen and (min-width: 768px) {
-  #billboard .slide {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
+  #billboard .slide .hero-media {
+    object-position: center 42%;
   }
 }
 
@@ -6312,6 +6323,21 @@ tfoot {
 
 /* - Services Section
 --------------------------------------------------------------*/
+#services {
+    position: relative;
+    overflow: hidden;
+}
+#services::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.28);
+    pointer-events: none;
+}
+#services > .container {
+    position: relative;
+    z-index: 1;
+}
 #services .text-content {
     margin-bottom: 1.5rem;
 }
@@ -6631,6 +6657,26 @@ tfoot {
 .gallery-row {
   display: flex;
   width: 100%;
+}
+.gallery-row .content {
+  display: flex;
+}
+.gallery-row .content figure {
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.gallery-row .content figure .image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery-row .content figure img.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .blog-content {
   position: absolute;
@@ -7005,6 +7051,7 @@ body.chocolat-open > .chocolat-image-wrapper {
     }
     #billboard .slide {
         min-height: 520px;
+        height: 520px;
     }
     .gallery-row {
         flex-wrap: wrap;
@@ -7043,8 +7090,10 @@ body.chocolat-open > .chocolat-image-wrapper {
     }
     #billboard .slide {
         min-height: 62svh;
-        background-image: url('images/MA-Mobile.webp') !important;
-        background-position: 56% center !important;
+        height: 62svh;
+    }
+    #billboard .slide .hero-media {
+        object-position: 56% center;
     }
 }
 
@@ -7067,7 +7116,10 @@ body.chocolat-open > .chocolat-image-wrapper {
     }
     #billboard .slide {
         min-height: 70svh;
-        background-position: 60% center !important;
+        height: 70svh;
+    }
+    #billboard .slide .hero-media {
+        object-position: 60% center;
     }
     .gallery-wrap .content {
         padding-left: 15px !important;
