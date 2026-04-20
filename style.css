@@ -6174,7 +6174,7 @@ tfoot {
     width: 100%;
     z-index: 9;
 
-    background: rgb(0,0,0,0.9);
+    background: rgba(120, 120, 120, 0.65);
     padding: 0;
 }
 #header.sticky .navbar {
@@ -6224,7 +6224,7 @@ tfoot {
       color: #fff;
   }
   .navbar #slide-navbar-collapse {
-      background: rgba(0,0,0,0.7);
+      background: rgba(120, 120, 120, 0.55);
       position: absolute;
       top: 0;
       left: 30px;
@@ -6268,8 +6268,17 @@ tfoot {
 }
 #billboard .slide {
   min-height: 690px;
+  background-size: cover;
   background-position: center center !important;
   background-repeat: no-repeat !important;
+}
+
+@media only screen and (min-width: 768px) {
+  #billboard .slide {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
 }
 
 /* - Portfolio Section
@@ -6868,7 +6877,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 
 /* Mobile responsiveness fixes */
 .site-navbar {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(120, 120, 120, 0.45);
     padding: 10px;
     border-radius: 20px;
     width: fit-content;
@@ -6962,7 +6971,7 @@ body.chocolat-open > .chocolat-image-wrapper {
         width: 100%;
         padding: 14px 16px;
         border-radius: 12px;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(120, 120, 120, 0.6);
         z-index: 10;
         overflow: hidden;
     }
@@ -7034,6 +7043,7 @@ body.chocolat-open > .chocolat-image-wrapper {
     }
     #billboard .slide {
         min-height: 62svh;
+        background-image: url('images/MA-Mobile.webp') !important;
         background-position: 56% center !important;
     }
 }
