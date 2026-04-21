@@ -1,384 +1,655 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <title>محمد علي المصور</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link
+      rel="preload"
+      as="image"
+      href="images/home2.webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="images/MA-Mobile.webp"
+      media="(max-width: 767px)"
+    />
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="aos/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-	<title>محمد علي المصور</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<link rel="preload" as="image" href="images/home2.webp" fetchpriority="high">
-	<link rel="preload" as="image" href="images/MA-Mobile.webp" media="(max-width: 767px)">
-	<link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
-	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
-	<link rel="stylesheet" type="text/css" href="aos/aos.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-lg col-md-12 padding-small flex-container site-navbar"
+          >
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#slide-navbar-collapse"
+              aria-controls="slide-navbar-collapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="icon icon-navicon"></i
+              ></span>
+            </button>
+            <div class="navbar-collapse collapse" id="slide-navbar-collapse">
+              <ul
+                class="navbar-nav list-inline light text-uppercase align-items-baseline"
+              >
+                <li class="nav-item active">
+                  <a href="#billboard" class="navlink">الرئيسية</a>
+                </li>
+                <li class="nav-item"><a href="#about">من نحن</a></li>
+                <li class="nav-item nav-brand">
+                  <a href="index.html"
+                    ><img
+                      loading="eager"
+                      class="nav-logo"
+                      src="images/Mophmmad_Ali_Logo.png"
+                      alt="logo"
+                      width="300"
+                      height="258"
+                  /></a>
+                </li>
+                <li class="nav-item"><a href="#gallery">المعرض</a></li>
+                <li class="nav-item"><a href="#contact">اتصل بنا</a></li>
+              </ul>
+            </div>
+            <!--navbar-collapse-->
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<body>
+    <div id="body-wrapper" class="bg-grey">
+      <section id="billboard" class="dark-overlay">
+        <div class="slide">
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/MA-Mobile.webp" />
+            <img
+              src="images/home2.webp"
+              alt="Hero"
+              class="hero-media"
+              loading="eager"
+              fetchpriority="high"
+              decoding="sync"
+              width="1920"
+              height="1280"
+            />
+          </picture>
+        </div>
+      </section>
+      <!--billboard-->
 
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<nav class="navbar navbar-expand-lg col-md-12 padding-small flex-container site-navbar">
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-						data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
-					</button>
-					<div class="navbar-collapse collapse" id="slide-navbar-collapse">
-						<ul class="navbar-nav list-inline light text-uppercase align-items-baseline">
-							<li class="nav-item active"><a href="#billboard" class="navlink">الرئيسية</a></li>
-							<li class="nav-item"><a href="#about">من نحن</a></li>
-							<li class="nav-item nav-brand">
-								<a href="index.html"><img loading="eager" class="nav-logo"
-										src="images/Mophmmad_Ali_Logo.png"
-										alt="logo" width="300" height="258"></a>
-							</li>
-							<li class="nav-item"><a href="#gallery">المعرض</a></li>
-							<li class="nav-item"><a href="#contact">اتصل بنا</a></li>
-						</ul>
-					</div><!--navbar-collapse-->
-				</nav>
-			</div>
-		</div>
-	</header>
+      <section id="about" class="about-us padding-medium bg-sand">
+        <div class="container">
+          <div class="row">
+            <div class="text-content text-center col-md-8">
+              <div class="section-header">
+                <h2 class="section-title pb-4 text-uppercase">
+                  نلتقط لحظاتكم المميزة
+                </h2>
 
-	<div id="body-wrapper" class="bg-grey">
+                <p dir="rtl">
+                  أنا محمد علي حمادة، مصوّر محترف بخبرة تتجاوز 10 سنوات.<br /><br />
 
-			<section id="billboard" class="dark-overlay">
-				<div class="slide">
-					<picture>
-						<source media="(max-width: 767px)" srcset="images/MA-Mobile.webp">
-						<img src="images/home2.webp" alt="Hero" class="hero-media" loading="eager" fetchpriority="high" decoding="sync" width="1920" height="1280">
-					</picture>
-				</div>
-			</section><!--billboard-->
+                  متخصّص في تصوير الفيديو والفوتوغرافي، خصوصًا الأعراس والحفلات،
+                  حيث أعمل على توثيق أجمل اللحظات والمشاعر الحقيقية بأسلوب طبيعي
+                  ومعبّر.<br /><br />
 
-		<section id="about" class="about-us padding-medium bg-sand">
-			<div class="container">
-				<div class="row">
-					<div class="text-content text-center col-md-8">
-						<div class="section-header">
-							<h2 class="section-title pb-4 text-uppercase">نلتقط لحظاتكم المميزة</h2>
+                  شاركت في أعمال درامية، من بينها التصوير مع الأستاذ تيم حسن
+                  والمخرج سامر البرقاوي في مسلسل "مولانا"، إلى جانب عدد من
+                  الممثلين في القطاع الفني، مما أكسبني خبرة قوية في هذا
+                  المجال.<br /><br />
 
-							<p dir="rtl">أنا محمد علي حمادة، مصوّر بخبرة أكتر من 10 سنين <br><br>
-								متخصّص بتصوير الفيديو والفوتو، خصوصًا الأعراس والحفلات، وبشتغل على توثيق أجمل اللحظات
-								والمشاعر الحقيقية بطريقة طبيعية ومعبّرة.<br><br>
-								شاركت بتصوير فيلم مولانا مع النجم تيم حسن وعدة ممثلين بالقطاع الفني، واكتسبت خبرة قوية
-								بهالمجال.<br><br>
-								محترف بالتصوير الخارجي والداخلي (Outdoor & Indoor)، وبالتعديل على الصور والفيديو لإبراز
-								أدق التفاصيل بأجمل شكل. هدفي دايمًا إقدّم شغل بيخلّي الذكريات تعيش للأبد </p>
-						</div>
-					</div><!--content-->
-				</div>
-			</div>
-		</section>
+                  أمتلك خبرة في التصوير الخارجي والداخلي (Outdoor & Indoor)،
+                  إضافة إلى احتراف تعديل الصور والفيديو لإبراز أدق التفاصيل
+                  بأجمل صورة.<br /><br />
 
-			<section id="services" class="services padding-large"
-				style="background: url(images/Mawlana6-desktop.webp) no-repeat center; background-size: cover;">
-			<div class="container">
-				<div class="row">
-					<div class="section-header text-center light">
-						<h2 class="section-title text-uppercase pb-4">~ الخدمات ~</h2>
-					</div>
-					<div class="text-content light text-center color-secondary col-md-5">
-						<p dir="rtl">خدمات التصوير الاحترافية لالتقاط أجمل اللحظات في أعراسكم ومناسباتكم الخاصة.</p>
-						<div class="services-phone-wrap"></div>
-					</div><!--text-content-->
-					<div class="content-row text-center light d-flex flex-wrap">
-						<div class="content-block col-md-4">
-							<h3>جلسات تصوير</h3>
-							<p dir="rtl">جلسات تصوير فوتوغرافي احترافية لالتقاط أجمل اللحظات والعواطف.</p>
-						</div><!--content-->
-						<div class="content-block col-md-4">
-							<h3>المناسبات</h3>
-							<p dir="rtl">تصوير المناسبات الخاصة مثل الأعراس والحفلات بطريقة مميزة.</p>
-						</div><!--content-->
-						<div class="content-block col-md-4">
-							<h3>تعديل الصور</h3>
-							<p dir="rtl">تعديل احترافي للصور والفيديو لإبراز أدق التفاصيل.</p>
-						</div><!--content-->
-					</div><!--services-content-->
-				</div>
-			</div>
-		</section>
+                  هدفي دائمًا أن أقدّم عملاً يخلّد الذكريات ويجعلها حيّة إلى
+                  الأبد.
+                </p>
+              </div>
+            </div>
+            <!--content-->
+          </div>
+        </div>
+      </section>
 
-		<section id="gallery" class="gallery-wrap padding-medium">
-			<div class="section-header text-center">
-				<h2 class="section-title text-uppercase pb-4">~ المعرض ~</h2>
-			</div>
-			<div class="gallery-content">
+      <section
+        id="services"
+        class="services padding-large"
+        style="
+          background: url(images/Mawlana6-desktop.webp) no-repeat center;
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="section-header text-center light">
+              <h2 class="section-title text-uppercase pb-4">~ الخدمات ~</h2>
+            </div>
+            <div
+              class="text-content light text-center color-secondary col-md-5"
+            >
+              <p dir="rtl">
+                خدمات التصوير الاحترافية لالتقاط أجمل اللحظات في أعراسكم
+                ومناسباتكم الخاصة.
+              </p>
+              <div class="services-phone-wrap"></div>
+            </div>
+            <!--text-content-->
+            <div class="content-row text-center light d-flex flex-wrap">
+              <div class="content-block col-md-4">
+                <h3>جلسات تصوير</h3>
+                <p dir="rtl">
+                  جلسات تصوير فوتوغرافي احترافية لالتقاط أجمل اللحظات والعواطف.
+                </p>
+              </div>
+              <!--content-->
+              <div class="content-block col-md-4">
+                <h3>المناسبات</h3>
+                <p dir="rtl">
+                  تصوير المناسبات الخاصة مثل الأعراس والحفلات بطريقة مميزة.
+                </p>
+              </div>
+              <!--content-->
+              <div class="content-block col-md-4">
+                <h3>تعديل الصور</h3>
+                <p dir="rtl">
+                  تعديل احترافي للصور والفيديو لإبراز أدق التفاصيل.
+                </p>
+              </div>
+              <!--content-->
+            </div>
+            <!--services-content-->
+          </div>
+        </div>
+      </section>
 
-				<div class="gallery-row">
+      <section id="gallery" class="gallery-wrap padding-medium">
+        <div class="section-header text-center">
+          <h2 class="section-title text-uppercase pb-4">~ المعرض ~</h2>
+        </div>
+        <div class="gallery-content">
+          <div class="gallery-row">
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Taim6-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Taim6-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1067"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Taim4-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Taim4-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1067"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Mawlana7-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Mawlana7-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1148"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+          </div>
 
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Taim6-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Taim6-1600.webp" alt="model" class="galleryImg" width="1067" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Taim4-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Taim4-1600.webp" alt="model" class="galleryImg" width="1067" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Mawlana7-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Mawlana7-1600.webp" alt="model" class="galleryImg" width="1148" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
+          <div class="gallery-row">
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/outDoor5-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/outDoor5-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1084"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Taim1-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Taim1-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1067"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Mawlana4-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Mawlana4-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1067"
+                    height="1600"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+          </div>
 
-				</div>
+          <div class="gallery-row">
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Mawlana2-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Mawlana2-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1600"
+                    height="1067"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Mawlana3-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Mawlana3-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1600"
+                    height="900"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+            <div class="content col-md-4 pb-4">
+              <figure>
+                <a
+                  class="image-link"
+                  href="images/optimized/lightbox/Taim2-2400.webp"
+                >
+                  <img
+                    loading="eager"
+                    src="images/optimized/gallery/Taim2-1600.webp"
+                    alt="model"
+                    class="galleryImg"
+                    width="1600"
+                    height="1067"
+                  />
+                  <div class="overlay">
+                    <i class="icon icon-search-plus"></i>
+                  </div>
+                  <!--imgOverlay-->
+                </a>
+              </figure>
+            </div>
+            <!--content-->
+          </div>
+        </div>
+        <!--gallery-content-->
+      </section>
 
-				<div class="gallery-row">
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/outDoor5-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/outDoor5-1600.webp" alt="model" class="galleryImg" width="1084" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Taim1-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Taim1-1600.webp" alt="model" class="galleryImg" width="1067" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Mawlana4-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Mawlana4-1600.webp" alt="model" class="galleryImg" width="1067" height="1600">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-				</div>
+      <section id="contact" class="contact-information">
+        <div class="container">
+          <div class="row">
+            <div class="section-header text-center">
+              <h2 class="section-title text-uppercase pb-4">~ اتصل بنا ~</h2>
+            </div>
+            <form class="contact-form d-flex flex-wrap mt-4 col-md-12 dark">
+              <div class="text-input flex-container">
+                <div class="inputContainer col-md-6 pl-0 pr-0">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="الاسم الأول"
+                    class="name mb-3"
+                  />
+                  <i class="icon icon-user"></i>
+                </div>
+                <div class="inputContainer col-md-6 pr-0">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="الاسم الأخير"
+                    class="name mb-3"
+                  />
+                  <i class="icon icon-user"></i>
+                </div>
+              </div>
+              <!--text-input-->
+              <div class="text-input flex-container">
+                <div class="inputContainer col-md-6 pl-0 pr-0">
+                  <input
+                    type="text"
+                    name="E-mail"
+                    placeholder="البريد الإلكتروني"
+                    class="mr-3 mb-3"
+                  />
+                  <i class="icon icon-envelope"></i>
+                </div>
+                <div class="inputContainer col-md-6 pr-0">
+                  <input
+                    type="text"
+                    name="Subject"
+                    placeholder="رقم الهاتف"
+                    class="mb-3"
+                  />
+                  <i class="icon icon-phone"></i>
+                </div>
+              </div>
+              <div class="inputContainer col-md-12 pl-0 pr-0">
+                <input
+                  type="text"
+                  name="Subject"
+                  placeholder="Subject"
+                  class="mb-3"
+                />
+                <i class="icon icon-edit"></i>
+              </div>
+              <div class="inputContainer col-md-12 pl-0 pr-0">
+                <textarea
+                  placeholder="الرسالة"
+                  style="height: 150px"
+                ></textarea>
+                <i class="icon icon-edit"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--container-->
+        <div class="pix_btn text-center">
+          <button class="contact-send-btn mt-5"><span>إرسال</span></button>
+        </div>
+      </section>
 
-				<div class="gallery-row">
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Mawlana2-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Mawlana2-1600.webp" alt="model" class="galleryImg" width="1600" height="1067">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Mawlana3-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Mawlana3-1600.webp" alt="model" class="galleryImg" width="1600" height="900">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-					<div class="content col-md-4 pb-4">
-						<figure>
-							<a class="image-link" href="images/optimized/lightbox/Taim2-2400.webp">
-								<img loading="eager" src="images/optimized/gallery/Taim2-1600.webp" alt="model" class="galleryImg" width="1600" height="1067">
-								<div class="overlay">
-									<i class="icon icon-search-plus"></i>
-								</div><!--imgOverlay-->
-							</a>
-						</figure>
-					</div><!--content-->
-				</div>
+      <section class="instagram padding-medium">
+        <div class="container">
+          <div class="row">
+            <div class="section-header text-center">
+              <h2 class="section-title text-uppercase pb-4">إنستغرام</h2>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/outDoor2-900.webp"
+                    alt="instagram"
+                    width="900"
+                    height="600"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/outDoor1-900.webp"
+                    alt="instagram"
+                    class="instagram-left"
+                    width="900"
+                    height="600"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/outDoor10-900.webp"
+                    alt="instagram"
+                    width="900"
+                    height="600"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/outDoor9-900.webp"
+                    alt="instagram"
+                    width="900"
+                    height="506"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/OutDoor6-900.webp"
+                    alt="instagram"
+                    width="900"
+                    height="600"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div class="col-md-2 text-center mb-3">
+              <figure>
+                <a href="#">
+                  <img
+                    loading="eager"
+                    src="images/optimized/instagram/outDoor11-900.webp"
+                    alt="instagram"
+                    class="instagram-right"
+                    width="900"
+                    height="600"
+                  />
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			</div><!--gallery-content-->
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-main-row">
+              <!-- Left: Logo + Social Icons -->
+              <div class="footer-brand-block">
+                <div class="footer-logo mb-3">
+                  <img loading="eager" src="images/BlackLogo.png" alt="logo" />
+                </div>
+                <div class="social-links">
+                  <ul class="list-unstyled d-flex mb-0">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/mohamad.ali.photography/"
+                        target="_blank"
+                        ><i class="icon icon-instagram m-1"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/96170517162"
+                        target="_blank"
+                        class="whatsapp-link m-1"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--social-links-->
+              </div>
+              <!--footer-brand-block-->
 
-		</section>
+              <!-- Right: Nav Links + Contact Info stacked -->
+              <div class="footer-nav-contact-block">
+                <ul
+                  class="list-unstyled footer-inline-nav mb-4"
+                  style="font-size: 20px"
+                >
+                  <li><a href="#billboard">الرئيسية</a></li>
+                  <li><a href="#about">من نحن</a></li>
+                  <li><a href="#gallery">المعرض</a></li>
+                  <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+              </div>
+              <!--footer-nav-contact-block-->
+            </div>
+            <!--footer-main-row-->
+          </div>
+        </div>
+      </footer>
 
-		<section id="contact" class="contact-information">
-			<div class="container">
-				<div class="row">
-					<div class="section-header text-center">
-						<h2 class="section-title text-uppercase pb-4">~ اتصل بنا ~</h2>
-					</div>
-					<form class="contact-form d-flex flex-wrap mt-4 col-md-12 dark">
-						<div class="text-input flex-container">
-							<div class="inputContainer col-md-6 pl-0 pr-0">
-								<input type="text" name="name" placeholder="الاسم الأول" class="name mb-3">
-								<i class="icon icon-user"></i>
-							</div>
-							<div class="inputContainer col-md-6 pr-0">
-								<input type="text" name="name" placeholder="الاسم الأخير" class="name mb-3">
-								<i class="icon icon-user"></i>
-							</div>
-						</div><!--text-input-->
-						<div class="text-input flex-container">
-							<div class="inputContainer col-md-6 pl-0 pr-0">
-								<input type="text" name="E-mail" placeholder="البريد الإلكتروني" class="mr-3 mb-3">
-								<i class="icon icon-envelope"></i>
-							</div>
-							<div class="inputContainer col-md-6 pr-0">
-								<input type="text" name="Subject" placeholder="رقم الهاتف" class="mb-3">
-								<i class="icon icon-phone"></i>
-							</div>
-						</div>
-						<div class="inputContainer col-md-12 pl-0 pr-0">
-							<input type="text" name="Subject" placeholder="Subject" class="mb-3">
-							<i class="icon icon-edit"></i>
-						</div>
-						<div class="inputContainer col-md-12 pl-0 pr-0">
-							<textarea placeholder="الرسالة" style="height: 150px;"></textarea>
-							<i class="icon icon-edit"></i>
-						</div>
-					</form>
-				</div>
-			</div><!--container-->
-			<div class="pix_btn text-center">
-				<button class="contact-send-btn mt-5"><span>إرسال</span></button>
-			</div>
-		</section>
+      <div class="footer-bottom bg-mine-shaft">
+        <div class="container">
+          <div class="padding-xsmall text-center">
+            <div class="copyright color-secondary">
+              <p class="mb-0">
+                © 2026 Mohamad Ali.&nbsp;&nbsp;All Rights Reserved. Created by
+                Iklim Digital
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<section class="instagram padding-medium">
-			<div class="container">
-				<div class="row">
-					<div class="section-header text-center">
-						<h2 class="section-title text-uppercase pb-4">إنستغرام</h2>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/outDoor2-900.webp" alt="instagram" width="900" height="600">
-							</a>
-						</figure>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/outDoor1-900.webp" alt="instagram" class="instagram-left" width="900" height="600">
-							</a>
-						</figure>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/outDoor10-900.webp" alt="instagram" width="900" height="600">
-							</a>
-						</figure>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/outDoor9-900.webp" alt="instagram" width="900" height="506">
-							</a>
-						</figure>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/OutDoor6-900.webp" alt="instagram" width="900" height="600">
-							</a>
-						</figure>
-					</div>
-					<div class="col-md-2 text-center mb-3">
-						<figure>
-							<a href="#">
-								<img loading="eager" src="images/optimized/instagram/outDoor11-900.webp" alt="instagram" class="instagram-right" width="900" height="600">
-							</a>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer-main-row">
-
-						<!-- Left: Logo + Social Icons -->
-						<div class="footer-brand-block">
-							<div class="footer-logo mb-3">
-							<img loading="eager" src="images/BlackLogo.png"
-									alt="logo">
-							</div>
-							<div class="social-links">
-								<ul class="list-unstyled d-flex mb-0">
-									<li><a href="https://www.instagram.com/mohamad.ali.photography/" target="_blank"><i class="icon icon-instagram m-1"></i></a></li>
-									<li>
-										<a href="https://wa.me/96170517162" target="_blank" class="whatsapp-link m-1">
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-												viewBox="0 0 24 24" fill="currentColor">
-												<path
-													d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div><!--social-links-->
-						</div><!--footer-brand-block-->
-
-						<!-- Right: Nav Links + Contact Info stacked -->
-						<div class="footer-nav-contact-block">
-							<ul class="list-unstyled footer-inline-nav mb-4" style="font-size: 20px;">
-								<li><a href="#billboard">الرئيسية</a></li>
-								<li><a href="#about">من نحن</a></li>
-								<li><a href="#gallery">المعرض</a></li>
-								<li><a href="#contact">اتصل بنا</a></li>
-							</ul>
-						</div><!--footer-nav-contact-block-->
-
-					</div><!--footer-main-row-->
-				</div>
-			</div>
-		</footer>
-
-		<div class="footer-bottom bg-mine-shaft">
-			<div class="container">
-				<div class="padding-xsmall text-center">
-					<div class="copyright color-secondary">
-						<p class="mb-0">© 2026 Mohamad Ali.&nbsp;&nbsp;All Rights Reserved. Created by Iklim Digital</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
-	<script type="text/javascript" src="aos/aos.js"></script>
-	<!-- <script type="text/javascript" src="js/locomotive-scroll.min.js"></script> -->
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
-</body>
-
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="aos/aos.js"></script>
+    <!-- <script type="text/javascript" src="js/locomotive-scroll.min.js"></script> -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

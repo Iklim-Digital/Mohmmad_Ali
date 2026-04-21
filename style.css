@@ -6174,11 +6174,18 @@ tfoot {
     width: 100%;
     z-index: 9;
 
-    background: rgba(120, 120, 120, 0.65);
+    background: rgba(35, 35, 35, 0.86);
     padding: 0;
 }
 #header.sticky .navbar {
     padding: 0;
+}
+#header.sticky .site-navbar {
+    background: transparent;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #header .nav-item.nav-brand img {
     transition: width 0.3s ease, height 0.3s ease;
@@ -6187,8 +6194,11 @@ tfoot {
     align-items: center !important;
 }
 #header.sticky .nav-item.nav-brand img {
-    width: 150px;
-    height: 130px;
+  width: 150px;
+  height: 130px;
+}
+#header.sticky .nav-item.nav-brand .nav-logo {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.45));
 }
 #header .navbar.padding-small {
     padding-top: 0;
