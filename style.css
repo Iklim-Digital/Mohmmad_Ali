@@ -6657,25 +6657,22 @@ tfoot {
 .gallery-row {
   display: flex;
   width: 100%;
+  align-items: flex-start;
 }
 .gallery-row .content {
-  display: flex;
+  display: block;
 }
 .gallery-row .content figure {
   margin: 0;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
 }
 .gallery-row .content figure .image-link {
   display: block;
   width: 100%;
-  height: 100%;
 }
 .gallery-row .content figure img.galleryImg {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 .blog-content {
