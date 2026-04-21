@@ -6971,6 +6971,7 @@ body.chocolat-open > .chocolat-image-wrapper {
         padding: 8px 12px;
         display: flex;
         align-items: center;
+        background: rgba(0, 0, 0, 0.7);
     }
     #header .nav-item.nav-brand .nav-logo,
     #header.sticky .nav-item.nav-brand .nav-logo {
@@ -6981,6 +6982,7 @@ body.chocolat-open > .chocolat-image-wrapper {
         margin-left: auto;
         margin-top: 0;
         margin-bottom: 0;
+        align-self: center;
         color: #fff;
         border: none;
         padding: 0.35rem 0.55rem;
@@ -7006,6 +7008,10 @@ body.chocolat-open > .chocolat-image-wrapper {
         justify-content: center;
         line-height: 1;
     }
+    .navbar button.navbar-toggler .navbar-toggler-icon i {
+        display: block;
+        line-height: 1;
+    }
     .navbar #slide-navbar-collapse {
         position: absolute;
         top: calc(100% + 8px);
@@ -7014,7 +7020,7 @@ body.chocolat-open > .chocolat-image-wrapper {
         width: 100%;
         padding: 14px 16px;
         border-radius: 12px;
-        background: rgba(120, 120, 120, 0.6);
+        background: rgba(0, 0, 0, 0.75);
         z-index: 10;
         overflow: hidden;
     }
